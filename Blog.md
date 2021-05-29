@@ -51,7 +51,7 @@ in this part we'll explore the datasets to understand more the data and the rela
  	The offers' channels are concatenated in one column and needs splitting
 
 #### All the Data Set:
-Pic
+Pic1
 
 ### 2- Profile Data Set
  
@@ -62,4 +62,11 @@ Pic
  	5. Most of the Customers are member since 2017/2018
   
  #### Sample of the Dataset
- pic
+ pic2
+ 
+ #### Some Statistics about the numerical columns:
+ 
+ gender
+ age
+ membershpi
+ 
