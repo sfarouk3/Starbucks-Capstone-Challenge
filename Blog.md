@@ -74,9 +74,9 @@ in this part we'll explore the datasets to understand more the data and the rela
  #### Some Statistics about the numerical columns:
  ![intro_image](https://github.com/sfarouk3/Starbucks-Capstone-Challenge/blob/main/Starbucks%20pics/pic4.png)
  
- gender pic
- age pic
- membershpi pic
+ ![intro_image](https://github.com/sfarouk3/Starbucks-Capstone-Challenge/blob/main/Starbucks%20pics/SBgender.png)
+ ![intro_image](https://github.com/sfarouk3/Starbucks-Capstone-Challenge/blob/main/Starbucks%20pics/SBage.png)
+ ![intro_image](https://github.com/sfarouk3/Starbucks-Capstone-Challenge/blob/main/Starbucks%20pics/SBPie.png)
  
  ### 3-Transcript Data Set
 
@@ -85,7 +85,7 @@ in this part we'll explore the datasets to understand more the data and the rela
  	3. The Value column contains offer_ids, amount spent
 
  ![intro_image](https://github.com/sfarouk3/Starbucks-Capstone-Challenge/blob/main/Starbucks%20pics/pic5.png)
- event bar pic
+ ![intro_image](https://github.com/sfarouk3/Starbucks-Capstone-Challenge/blob/main/Starbucks%20pics/SBeventbar.png)
  
  ## Data Preprocessing <a name="DataPreprocessing"></a>
 ### Cleaning Portfolio dataset
@@ -100,7 +100,7 @@ in this part we'll explore the datasets to understand more the data and the rela
     
   #### After Removing the Null values the max age became 101 instead of 118
   ![intro_image](https://github.com/sfarouk3/Starbucks-Capstone-Challenge/blob/main/Starbucks%20pics/pic7.png)
-  agedist pic
+  ![intro_image](https://github.com/sfarouk3/Starbucks-Capstone-Challenge/blob/main/Starbucks%20pics/sbage2.png)
   
  ##### Adding a simpler mapping user id for the customers
  ![intro_image](https://github.com/sfarouk3/Starbucks-Capstone-Challenge/blob/main/Starbucks%20pics/pic8.png)
