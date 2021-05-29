@@ -65,8 +65,40 @@ Pic1
  pic2
  
  #### Some Statistics about the numerical columns:
+ pic3
  
- gender
- age
- membershpi
+ gender pic
+ age pic
+ membershpi pic
+ 
+ ### 3-Transcript Data Set
+
+ 	1. For different event status: 'offer received', 'offer viewed', 'transaction', 'offer completed'
+ 	2. The transaction event has no offer id associated with it.
+ 	3. The Value column contains offer_ids, amount spent
+
+ pic4
+ event bar pic
+ 
+ ## Data Preprocessing
+### Cleaning Portfolio dataset
+    1.  Rename the id column to 'offer_id'
+    2. Encoding the channels column and offer_type column
+    3. Removing the old columns (channels and offer_type)
+  pic5
+ ### Cleaning Profile Dataset
+    1.	removing null values
+    2.	removing the outliers in age column
+    3.	mapping the id of the customer to a simpler form of 'user_id'
+    
+  #### After Removing the Null values the max age became 101 instead of 118
+  pic6
+  agedist pic
+  
+ ##### Adding a simpler mapping user id for the customers
+ pic7
+
+    
+
+ 
  
