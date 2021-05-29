@@ -41,69 +41,58 @@ The data is contained in three files:
   2.	person  - customer id
   3.	time  - time in hours since start of offer. The data begins at time t=0
   4.	value  - either an offer id or transaction amount depending on the record
-
 ## Problem Statement <a name="ProblemStatement"></a>
 As long as not all users receive the same offer, I need to build a recommendation system that provides the most suitable offers for each user.
-
 ## Metrics <a name="Metrics"></a>
 This new recommendation system can be tested using the A/B testing concept to compare it to existing systems and evaluate the added value of this new system.
-
 ## Data Exploration and Visualization <a name="ExploratoryDataAnalysisandVisualization"></a>
 in this part we'll explore the datasets to understand more the data and the relation between different variables.
-
 ### 1-Portfolio Data Set
-
  	10 different offers of types bogo, discount and informational offers
  	The offers' channels are concatenated in one column and needs splitting
-
 #### All the Data Set:
 ![intro_image](https://github.com/sfarouk3/Starbucks-Capstone-Challenge/blob/main/Starbucks%20pics/pic1.jpg)
 ![intro_image](https://github.com/sfarouk3/Starbucks-Capstone-Challenge/blob/main/Starbucks%20pics/pic2.png)
-
 ### 2- Profile Data Set
- 
  	1. 17000 distinct customers.
  	2. Some NaN values in the columns.
  	3. Age column has some big values – like 118, this needs to be removed.
  	4. Males have higher distribution than Females
- 	5. Most of the Customers are member since 2017/2018
-  
+ 	5. Most of the Customers are member since 2017/2018  
  #### Sample of the Dataset
- ![intro_image](https://github.com/sfarouk3/Starbucks-Capstone-Challenge/blob/main/Starbucks%20pics/pic3.png)
- 
+ ![intro_image](https://github.com/sfarouk3/Starbucks-Capstone-Challenge/blob/main/Starbucks%20pics/pic3.png) 
  #### Some Statistics about the numerical columns:
- ![intro_image](https://github.com/sfarouk3/Starbucks-Capstone-Challenge/blob/main/Starbucks%20pics/pic4.png)
- 
- ![intro_image](https://github.com/sfarouk3/Starbucks-Capstone-Challenge/blob/main/Starbucks%20pics/SBgender.png)
- ![intro_image](https://github.com/sfarouk3/Starbucks-Capstone-Challenge/blob/main/Starbucks%20pics/SBage.png)
- ![intro_image](https://github.com/sfarouk3/Starbucks-Capstone-Challenge/blob/main/Starbucks%20pics/SBPie.png)
- 
- ### 3-Transcript Data Set
-
+ ![intro_image](https://github.com/sfarouk3/Starbucks-Capstone-Challenge/blob/main/Starbucks%20pics/pic4.png)   
+ Gender Distribution  
+ ![intro_image](https://github.com/sfarouk3/Starbucks-Capstone-Challenge/blob/main/Starbucks%20pics/SBgender.png)  
+ Age Distribution  
+ ![intro_image](https://github.com/sfarouk3/Starbucks-Capstone-Challenge/blob/main/Starbucks%20pics/SBage.png)  
+ Membership Year Distribution  
+ ![intro_image](https://github.com/sfarouk3/Starbucks-Capstone-Challenge/blob/main/Starbucks%20pics/SBPie.png)  
+### 3-Transcript Data Set
  	1. For different event status: 'offer received', 'offer viewed', 'transaction', 'offer completed'
  	2. The transaction event has no offer id associated with it.
  	3. The Value column contains offer_ids, amount spent
-
- ![intro_image](https://github.com/sfarouk3/Starbucks-Capstone-Challenge/blob/main/Starbucks%20pics/pic5.png)
- ![intro_image](https://github.com/sfarouk3/Starbucks-Capstone-Challenge/blob/main/Starbucks%20pics/SBeventbar.png)
+![intro_image](https://github.com/sfarouk3/Starbucks-Capstone-Challenge/blob/main/Starbucks%20pics/pic5.png)  
+Offers Status  
+![intro_image](https://github.com/sfarouk3/Starbucks-Capstone-Challenge/blob/main/Starbucks%20pics/SBeventbar.png)
  
- ## Data Preprocessing <a name="DataPreprocessing"></a>
+## Data Preprocessing <a name="DataPreprocessing"></a>
 ### Cleaning Portfolio dataset
     1.  Rename the id column to 'offer_id'
     2. Encoding the channels column and offer_type column
     3. Removing the old columns (channels and offer_type)
   ![intro_image](https://github.com/sfarouk3/Starbucks-Capstone-Challenge/blob/main/Starbucks%20pics/pic6.png)
- ### Cleaning Profile Dataset
+### Cleaning Profile Dataset
     1.	removing null values
     2.	removing the outliers in age column
-    3.	mapping the id of the customer to a simpler form of 'user_id'
-    
-  #### After Removing the Null values the max age became 101 instead of 118
+    3.	mapping the id of the customer to a simpler form of 'user_id'  
+#### After Removing the Null values the max age became 101 instead of 118
   ![intro_image](https://github.com/sfarouk3/Starbucks-Capstone-Challenge/blob/main/Starbucks%20pics/pic7.png)
   ![intro_image](https://github.com/sfarouk3/Starbucks-Capstone-Challenge/blob/main/Starbucks%20pics/sbage2.png)
   
- ##### Adding a simpler mapping user id for the customers
- ![intro_image](https://github.com/sfarouk3/Starbucks-Capstone-Challenge/blob/main/Starbucks%20pics/pic8.png)
+##### Adding a simpler mapping user id for the customers
+![intro_image](https://github.com/sfarouk3/Starbucks-Capstone-Challenge/blob/main/Starbucks%20pics/pic8.png)
 
  ### Cleaning Transcript Dataset
     1.	extract the offer_id and the amount of money from value column
