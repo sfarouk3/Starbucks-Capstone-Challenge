@@ -10,7 +10,11 @@ pic
   6.	[Data Preprocessing](#DataPreprocessing)
   7.	[User-User Based Collaborative Filtering](#User-UserBasedCollaborativeFiltering)
   8.	[Refinement: Rank Based Recommendations](#RefinementRankBasedRecommendations)
-  9.	[Conclusion](#Conclusion)
+  9.	[Evaluation and Validation](#EvaluationandValidation)
+  10.	[Justification](#Justification)
+  11.	[Conclusion - Reflection](#Conclusion-Reflection)
+  12.	[Improvement](#Improvement)
+
 
 ## Project Overview <a name="ProjectOverview"></a>
 This is a simulation for the customer behavior on the Starbucks rewards mobile app. Once every few days, Starbucks sends out an offer to users of the mobile app. An offer can be merely an advertisement for a drink or an actual offer such as a discount or BOGO (buy one get one free). Some users might not receive any offer during certain weeks.
@@ -121,6 +125,45 @@ This is done on 4 steps:
 
 #### Sample of the similar users data frame:
 pic9
+
+Sample of the top 5 recommended offers for a specific user:
+['2298d6c36e964ae4a3e7e9706d1fb8c2',
+ 'f19421c1d4aa40978ebb69ca19b0e20d',
+ 'ae264e3637204a6fb9bb56bc8210ddfd',
+ '9b98b8c7a33c4b65b9aebfe6a799e6d9',
+ '4d5c57ea9a6940dd891ad53e9dbe8da0']
+
+## Refinement <a name="RefinementRankBasedRecommendations"></a>
+
+As new user will have no similarity with any of the existing users as they haven’t used any offers yet, so we can use rank based recommendation for those customers based on top offers used.
+
+### Rank Based Recommendations: <a name="ProjectOverview"></a>
+This is to be used for any new user as it ranks the offers based on the usage.
+Sample of the output:
+pic10
+
+
+## Evaluation and Validation <a name="EvaluationandValidation"></a>
+
+As we didn’t use a machine learning model in this problem, the evaluation of this recommendation system shall be through A/B testing concept where the users are divided randomly into two paths (one for the existing recommendation system and the other for our new recommendation system).
+
+This would show the performance of the new system over the old one, and based on the testing we can decide the way forward.
+
+
+## Justification <a name="Justification"></a>
+
+In this project we covered different types of users (existing and new) through different types of recommendation systems (Rank based and collaborative filtering)
+
+
+## Conclusion - Reflection <a name="Conclusion-Reflection"></a>
+From the above we can see that we can use a combination of 2 techniques for Offers Recommendations
+1.	for New users that have never used the Starbucks offers, we can use Rank Based Recommendations.
+2.	for Current users for Starbucks offers, we can use User-User Based Collaborative Filtering.
+
+## Improvement <a name="Improvement"></a>
+The recommendation system can be further improved by combining different types of recommendation systems like matrix factorization and other techniques; which I will consider in phase 2 of this project
+
+
   
 
  
