@@ -2,14 +2,14 @@
 # Starbucks Capstone Challenge
 
 ## Table of Contents
-  1.	[Project Overview] (#Project Overview)
-  2.	[Data Sets](#Data Sets)
-  3.	[Problem Statement](#Problem Statement)
+  1.	[Project Overview](#ProjectOverview)
+  2.	[Data Sets](#DataSets)
+  3.	[Problem Statement](#ProblemStatement)
   4.	[Metrics](#Metrics)
-  5.	[Exploratory Data Analysis and Visualization](#Exploratory Data Analysis and Visualization)
-  6.	[Data Preprocessing](#Data Preprocessing)
-  7.	[User-User Based Collaborative Filtering](#User-User Based Collaborative Filtering)
-  8.	[Refinement: Rank Based Recommendations](#Refinement: Rank Based Recommendations)
+  5.	[Exploratory Data Analysis and Visualization](#ExploratoryDataAnalysisandVisualization)
+  6.	[Data Preprocessing](#DataPreprocessing)
+  7.	[User-User Based Collaborative Filtering](#User-UserBasedCollaborativeFiltering)
+  8.	[Refinement: Rank Based Recommendations](#Refinement:RankBasedRecommendations)
   9.	[Conclusion](#Conclusion)
 
 ## Project Overview
