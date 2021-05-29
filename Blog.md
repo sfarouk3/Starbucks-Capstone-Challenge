@@ -1,6 +1,6 @@
 
 # Starbucks Capstone Challenge
-
+pic
 ## Table of Contents
   1.	[Project Overview](#ProjectOverview)
   2.	[Data Sets](#DataSets)
@@ -45,3 +45,21 @@ This new recommendation system can be tested using the A/B testing concept to co
 ## Data Exploration and Visualization <a name="ExploratoryDataAnalysisandVisualization"></a>
 in this part we'll explore the datasets to understand more the data and the relation between different variables.
 
+### 1-Portfolio Data Set
+
+ 	10 different offers of types bogo, discount and informational offers
+ 	The offers' channels are concatenated in one column and needs splitting
+
+#### All the Data Set:
+Pic
+
+### 2- Profile Data Set
+ 
+ 	1. 17000 distinct customers.
+ 	2. Some NaN values in the columns.
+ 	3. Age column has some big values – like 118, this needs to be removed.
+ 	4. Males have higher distribution than Females
+ 	5. Most of the Customers are member since 2017/2018
+  
+ #### Sample of the Dataset
+ pic
