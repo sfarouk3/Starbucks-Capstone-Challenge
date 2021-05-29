@@ -80,7 +80,7 @@ Pic1
  pic4
  event bar pic
  
- ## Data Preprocessing
+ ## Data Preprocessing <a name="DataPreprocessing"></a>
 ### Cleaning Portfolio dataset
     1.  Rename the id column to 'offer_id'
     2. Encoding the channels column and offer_type column
@@ -98,7 +98,30 @@ Pic1
  ##### Adding a simpler mapping user id for the customers
  pic7
 
-    
+ ### Cleaning Transcript Dataset
+    1.	extract the offer_id and the amount of money from value column
+    2.	encode the 'event' column
+    3.	drop the old columns 'value', 'event'
+#### Data after parsing and extracting offer id   and amount columns from value column:
+pic8
+
+## Implementation
+
+## Building a Recommendation System
+
+## User-User Based Collaborative Filtering: <a name="User-UserBasedCollaborativeFiltering"></a>
+This is to be used for the Current users for Starbucks offers based on similarity and closeness to the target user.
+
+This is done on 4 steps:
+    1.	Creating user_item matrix of users as rows and offers as columns
+    2.	Find the similar users to the target user sorted by similarity and on a tie it sorts by the number of used offer by each user.
+    3.	Get the Offers used by the above extracted users.
+    4.	Final ranking for the above extracted offers by the total number that these offers have been used and completed.
+
+
+#### Sample of the similar users data frame:
+pic9
+  
 
  
  
