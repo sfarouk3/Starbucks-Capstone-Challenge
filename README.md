@@ -25,7 +25,7 @@ The notebook is easy to navigate and I have added comments and markdown cells to
 
 ## Results<a name="results"></a>
 
-The analysis and findings of this study can be found in a detailed report attached to this repo [here](https://github.com/sfarouk3/Starbucks-Capstone-Challenge/blob/main/Starbucks%20Capstone%20Challenge.pdf).
+The analysis and findings of this study can be found in details [here](https://github.com/sfarouk3/Starbucks-Capstone-Challenge/blob/main/Blog.md#DataPreprocessing).
 
 
 ## Licensing, Authors, Acknowledgements<a name="licensing"></a>
