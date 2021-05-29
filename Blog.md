@@ -9,7 +9,7 @@
   5.	[Exploratory Data Analysis and Visualization](#ExploratoryDataAnalysisandVisualization)
   6.	[Data Preprocessing](#DataPreprocessing)
   7.	[User-User Based Collaborative Filtering](#User-UserBasedCollaborativeFiltering)
-  8.	[Refinement: Rank Based Recommendations](#Refinement:RankBasedRecommendations)
+  8.	[Refinement: Rank Based Recommendations](#RefinementRankBasedRecommendations)
   9.	[Conclusion](#Conclusion)
 
 ## Project Overview
