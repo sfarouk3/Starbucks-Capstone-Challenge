@@ -1,6 +1,8 @@
 
-# Starbucks Capstone Challenge
-pic
+# Starbucks Capstone Challenge   
+
+   ![intro_image](https://github.com/sfarouk3/Starbucks-Capstone-Challenge/blob/main/Starbucks%20pics/sbOverview.jfif)
+              
 ## Table of Contents
   1.	[Project Overview](#ProjectOverview)
   2.	[Data Sets](#DataSets)
@@ -55,7 +57,8 @@ in this part we'll explore the datasets to understand more the data and the rela
  	The offers' channels are concatenated in one column and needs splitting
 
 #### All the Data Set:
-Pic1
+![intro_image](https://github.com/sfarouk3/Starbucks-Capstone-Challenge/blob/main/Starbucks%20pics/pic1.jpg)
+![intro_image](https://github.com/sfarouk3/Starbucks-Capstone-Challenge/blob/main/Starbucks%20pics/pic2.png)
 
 ### 2- Profile Data Set
  
@@ -66,10 +69,10 @@ Pic1
  	5. Most of the Customers are member since 2017/2018
   
  #### Sample of the Dataset
- pic2
+ ![intro_image](https://github.com/sfarouk3/Starbucks-Capstone-Challenge/blob/main/Starbucks%20pics/pic3.png)
  
  #### Some Statistics about the numerical columns:
- pic3
+ ![intro_image](https://github.com/sfarouk3/Starbucks-Capstone-Challenge/blob/main/Starbucks%20pics/pic4.png)
  
  gender pic
  age pic
@@ -81,7 +84,7 @@ Pic1
  	2. The transaction event has no offer id associated with it.
  	3. The Value column contains offer_ids, amount spent
 
- pic4
+ ![intro_image](https://github.com/sfarouk3/Starbucks-Capstone-Challenge/blob/main/Starbucks%20pics/pic5.png)
  event bar pic
  
  ## Data Preprocessing <a name="DataPreprocessing"></a>
@@ -89,25 +92,25 @@ Pic1
     1.  Rename the id column to 'offer_id'
     2. Encoding the channels column and offer_type column
     3. Removing the old columns (channels and offer_type)
-  pic5
+  ![intro_image](https://github.com/sfarouk3/Starbucks-Capstone-Challenge/blob/main/Starbucks%20pics/pic6.png)
  ### Cleaning Profile Dataset
     1.	removing null values
     2.	removing the outliers in age column
     3.	mapping the id of the customer to a simpler form of 'user_id'
     
   #### After Removing the Null values the max age became 101 instead of 118
-  pic6
+  ![intro_image](https://github.com/sfarouk3/Starbucks-Capstone-Challenge/blob/main/Starbucks%20pics/pic7.png)
   agedist pic
   
  ##### Adding a simpler mapping user id for the customers
- pic7
+ ![intro_image](https://github.com/sfarouk3/Starbucks-Capstone-Challenge/blob/main/Starbucks%20pics/pic8.png)
 
  ### Cleaning Transcript Dataset
     1.	extract the offer_id and the amount of money from value column
     2.	encode the 'event' column
     3.	drop the old columns 'value', 'event'
 #### Data after parsing and extracting offer id   and amount columns from value column:
-pic8
+![intro_image](https://github.com/sfarouk3/Starbucks-Capstone-Challenge/blob/main/Starbucks%20pics/pic9.png)
 
 ## Implementation
 
@@ -124,7 +127,7 @@ This is done on 4 steps:
 
 
 #### Sample of the similar users data frame:
-pic9
+![intro_image](https://github.com/sfarouk3/Starbucks-Capstone-Challenge/blob/main/Starbucks%20pics/pic10.png)
 
 Sample of the top 5 recommended offers for a specific user:
 ['2298d6c36e964ae4a3e7e9706d1fb8c2',
@@ -140,7 +143,7 @@ As new user will have no similarity with any of the existing users as they haven
 ### Rank Based Recommendations: <a name="ProjectOverview"></a>
 This is to be used for any new user as it ranks the offers based on the usage.
 Sample of the output:
-pic10
+![intro_image](https://github.com/sfarouk3/Starbucks-Capstone-Challenge/blob/main/Starbucks%20pics/pic11.png)
 
 
 ## Evaluation and Validation <a name="EvaluationandValidation"></a>
