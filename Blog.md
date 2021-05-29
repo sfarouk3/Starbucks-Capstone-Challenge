@@ -12,10 +12,10 @@
   8.	[Refinement: Rank Based Recommendations](#RefinementRankBasedRecommendations)
   9.	[Conclusion](#Conclusion)
 
-## Project Overview
+## Project Overview <a name="ProjectOverview"></a>
 This is a simulation for the customer behavior on the Starbucks rewards mobile app. Once every few days, Starbucks sends out an offer to users of the mobile app. An offer can be merely an advertisement for a drink or an actual offer such as a discount or BOGO (buy one get one free). Some users might not receive any offer during certain weeks.
 
-## Data Sets
+## Data Sets <a name="DataSets"></a>
 The data is contained in three files:
 ### Portfolio file that contains offer ids and meta data about each offer
   1.	id  - offer id
@@ -36,10 +36,12 @@ The data is contained in three files:
   3.	time  - time in hours since start of offer. The data begins at time t=0
   4.	value  - either an offer id or transaction amount depending on the record
 
-## Problem Statement / Metrics
+## Problem Statement <a name="ProblemStatement"></a>
 As long as not all users receive the same offer, I need to build a recommendation system that provides the most suitable offers for each user.
+
+## Metrics <a name="Metrics"></a>
 This new recommendation system can be tested using the A/B testing concept to compare it to existing systems and evaluate the added value of this new system.
 
-## Data Exploration and Visualization
+## Data Exploration and Visualization <a name="ExploratoryDataAnalysisandVisualization"></a>
 in this part we'll explore the datasets to understand more the data and the relation between different variables.
 
