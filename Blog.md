@@ -149,6 +149,10 @@ Training accuracy:1.0000
 Test accuracy:0.8702 
 
 ## Evaluation and Validation <a name="EvaluationandValidation"></a>
+Below is a summary of the results using different models:
+![intro_image](https://github.com/sfarouk3/Starbucks-Capstone-Challenge/blob/main/Starbucks%20pics/modelsummary.png)  
+
+and below the details with feature importance:
 1. DecisionTreeClassifier:   
 Training accuracy:1.0000  
 Test accuracy:0.8178  
@@ -163,10 +167,15 @@ GradientBoostingClassifier feature importance:
 
 3. RandomForestClassifier:   
 Training accuracy:0.9909  
-Test accuracy:0.8562  
+Test accuracy:0.8513  
 RandomForestClassifier feature importance:  
 ![intro_image](https://github.com/sfarouk3/Starbucks-Capstone-Challenge/blob/main/Starbucks%20pics/SB_RF.png)  
- 
+
+4. RandomForestClassifier - After refinement (Using GridSearch):   
+Training accuracy:1.0  
+Test accuracy:0.8718  
+RandomForestClassifier feature importance:  
+![intro_image](https://github.com/sfarouk3/Starbucks-Capstone-Challenge/blob/main/Starbucks%20pics/rf_refined.png)  
 
 ## Justification <a name="Justification"></a>
 
