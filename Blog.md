@@ -146,7 +146,9 @@ Random forest model
 Using the GridSearchCv, I've tuned the number of RandomForst  estimators to reach the best estimator, and the accuracy did improved from 85.6% to 87% by setting the number of estimators to 150.  
  New RandomForestClassifier evaluation after tuning:  
 Training accuracy:1.0000  
-Test accuracy:0.8702 
+Test accuracy:0.8718 
+RandomForestClassifier feature importance:  
+![intro_image](https://github.com/sfarouk3/Starbucks-Capstone-Challenge/blob/main/Starbucks%20pics/rf_refined.png)
 
 ## Evaluation and Validation <a name="EvaluationandValidation"></a>
 Below is a summary of the results using different models:
