@@ -17,6 +17,7 @@
   11.	[Evaluation and Validation](#EvaluationandValidation)
   12.	[Justification](#Justification)
   13.	[Conclusion - Reflection](#Conclusion-Reflection)
+  14.	[Conclusion - Improvement](#Conclusion-Improvement)
   
 
 
@@ -190,6 +191,13 @@ As we can see in all the above work
 1. the best clf is randome forest
 2. the membership date is one of the most important features.
 3. the Testing accuracy is 87% after refinement, and in can be more improved if more features were added to the customers profile like customer segmentation based on monthly money spent in Starbucks, Fan flag,..etc
+
+
+## Conclusion - Improvement <a name="Conclusion-Improvement"></a>
+
+The model can be further improved by:
+1. Dataset: add more features to the customers profile like customer segmentation based on monthly money spent in Starbucks, Fan flag,..etc
+2. Model: try other classifiers and more hyper parameter tuning using gridsearch.
 
 
 
