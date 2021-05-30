@@ -149,19 +149,19 @@ Random forest model
 Training accuracy:1.0000  
 Test accuracy:0.8178  
 DecisionTreeClassifier feature importance:  
-pic
+![intro_image](https://github.com/sfarouk3/Starbucks-Capstone-Challenge/blob/main/Starbucks%20pics/SB_DTree.png)  
 
 2. GradientBoostingClassifier:   
 Training accuracy:0.8621  
 Test accuracy:0.8598  
 GradientBoostingClassifier feature importance:  
-pic
+![intro_image](https://github.com/sfarouk3/Starbucks-Capstone-Challenge/blob/main/Starbucks%20pics/SB_GB.png)  
 
 3. RandomForestClassifier:   
 Training accuracy:0.9909  
 Test accuracy:0.8562  
 RandomForestClassifier feature importance:  
-pic
+![intro_image](https://github.com/sfarouk3/Starbucks-Capstone-Challenge/blob/main/Starbucks%20pics/SB_RF.png)  
 
 ## Improvement <a name="Improvement"></a>
 Using the GridSearchCv, I've tuned the number of RandomForst  estimators to reach the best estimator, and the accuracy did improved from 85.6% to 87% by setting the number of estimators to 150.  
@@ -171,7 +171,7 @@ Test accuracy:0.8702
 
 ## Justification <a name="Justification"></a>
 
-In this project we covered different types of users (existing and new) through different types of recommendation systems (Rank based and collaborative filtering)
+In this project we covered different types of recommendation systems (Rank based and collaborative filtering) and different supervised machine learning models to predict the effectiveness of Starbucks offers.
 
 
 ## Conclusion - Reflection <a name="Conclusion-Reflection"></a>
