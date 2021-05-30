@@ -140,34 +140,35 @@ Sample of the output:
 Now I'll build a supervised Machine Learning Model on the valid offers data set to predict whether an offer will be completed or not.
 I will use three models and compare their results:
 
-DecisionTreeClassifier
-GradientBoostingClassifier
-Random forest model
+DecisionTreeClassifier  
+GradientBoostingClassifier  
+Random forest model  
 
 ## Evaluation and Validation <a name="EvaluationandValidation"></a>
-1. DecisionTreeClassifier: 
-Training accuracy:1.0000
-Test accuracy:0.8178
-DecisionTreeClassifier feature importance:
+1. DecisionTreeClassifier:   
+Training accuracy:1.0000  
+Test accuracy:0.8178  
+DecisionTreeClassifier feature importance:  
 pic
 
-2. GradientBoostingClassifier: 
-Training accuracy:0.8621
-Test accuracy:0.8598
-GradientBoostingClassifier feature importance:
+2. GradientBoostingClassifier:   
+Training accuracy:0.8621  
+Test accuracy:0.8598  
+GradientBoostingClassifier feature importance:  
 pic
 
-3. RandomForestClassifier: 
-Training accuracy:0.9909
-Test accuracy:0.8562
-RandomForestClassifier feature importance:
+3. RandomForestClassifier:   
+Training accuracy:0.9909  
+Test accuracy:0.8562  
+RandomForestClassifier feature importance:  
 pic
 
 ## Improvement <a name="Improvement"></a>
-Using the GridSearchCv, I've tuned the number of RandomForst  estimators to reach the best estimator, and the accuracy did improved from 85.6% to 87% by setting the number of estimators to 150.
- New RandomForestClassifier evaluation after tuning: 
-Training accuracy:1.0000
-Test accuracy:0.8702
+Using the GridSearchCv, I've tuned the number of RandomForst  estimators to reach the best estimator, and the accuracy did improved from 85.6% to 87% by setting the number of estimators to 150.  
+ New RandomForestClassifier evaluation after tuning:  
+Training accuracy:1.0000  
+Test accuracy:0.8702  
+
 ## Justification <a name="Justification"></a>
 
 In this project we covered different types of users (existing and new) through different types of recommendation systems (Rank based and collaborative filtering)
