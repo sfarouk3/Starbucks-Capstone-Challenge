@@ -10,11 +10,11 @@
   4.	[Metrics](#Metrics)
   5.	[Exploratory Data Analysis and Visualization](#ExploratoryDataAnalysisandVisualization)
   6.	[Data Preprocessing](#DataPreprocessing)
-  7.	[User-User Based Collaborative Filtering](#User-UserBasedCollaborativeFiltering)
-  8.	[Refinement: Rank Based Recommendations](#RefinementRankBasedRecommendations)
-  9.	[Model Implementation and Refinement](#ModelImplementationandRefinement)
-  10.	[Evaluation and Validation](#EvaluationandValidation)
-  11.	[Improvement](#Improvement)
+  7.	[Implementation: User-User Based Collaborative Filtering](#User-UserBasedCollaborativeFiltering)
+  8.	[Recommendation Refinement](#RefinementRankBasedRecommendations)
+  9.	[Implementation: Model](#ModelImplementation)
+  10.	[Model Refinement](#RefinementModel)
+  11.	[Evaluation and Validation](#EvaluationandValidation)
   12.	[Justification](#Justification)
   13.	[Conclusion - Reflection](#Conclusion-Reflection)
   
@@ -127,7 +127,7 @@ Sample of the top 5 recommended offers for a specific user:
  '9b98b8c7a33c4b65b9aebfe6a799e6d9',
  '4d5c57ea9a6940dd891ad53e9dbe8da0']
 
-## Refinement <a name="RefinementRankBasedRecommendations"></a>
+## Recommendation Refinement <a name="RefinementRankBasedRecommendations"></a>
 
 As new user will have no similarity with any of the existing users as they haven’t used any offers yet, so we can use rank based recommendation for those customers based on top offers used.
 
@@ -136,13 +136,19 @@ This is to be used for any new user as it ranks the offers based on the usage.
 Sample of the output:
 ![intro_image](https://github.com/sfarouk3/Starbucks-Capstone-Challenge/blob/main/Starbucks%20pics/pic11.png)
 
-## Model Implementation and Refinement <a name="ModelImplementationandRefinement"></a>
+##  Model Implementation <a name="ModelImplementation"></a>
 Now I'll build a supervised Machine Learning Model on the valid offers data set to predict whether an offer will be completed or not.
 I will use three models and compare their results:
 
 DecisionTreeClassifier  
 GradientBoostingClassifier  
 Random forest model  
+
+## Model Refinement <a name="RefinementModel"></a>
+Using the GridSearchCv, I've tuned the number of RandomForst  estimators to reach the best estimator, and the accuracy did improved from 85.6% to 87% by setting the number of estimators to 150.  
+ New RandomForestClassifier evaluation after tuning:  
+Training accuracy:1.0000  
+Test accuracy:0.8702 
 
 ## Evaluation and Validation <a name="EvaluationandValidation"></a>
 1. DecisionTreeClassifier:   
@@ -162,12 +168,7 @@ Training accuracy:0.9909
 Test accuracy:0.8562  
 RandomForestClassifier feature importance:  
 ![intro_image](https://github.com/sfarouk3/Starbucks-Capstone-Challenge/blob/main/Starbucks%20pics/SB_RF.png)  
-
-## Improvement <a name="Improvement"></a>
-Using the GridSearchCv, I've tuned the number of RandomForst  estimators to reach the best estimator, and the accuracy did improved from 85.6% to 87% by setting the number of estimators to 150.  
- New RandomForestClassifier evaluation after tuning:  
-Training accuracy:1.0000  
-Test accuracy:0.8702  
+ 
 
 ## Justification <a name="Justification"></a>
 
