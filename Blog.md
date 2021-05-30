@@ -44,7 +44,7 @@ The data is contained in three files:
   3.	time  - time in hours since start of offer. The data begins at time t=0
   4.	value  - either an offer id or transaction amount depending on the record
 ## Problem Statement <a name="ProblemStatement"></a>
-As long as not all users receive the same offer, I need to build a recommendation system that provides the most suitable offers for each user.
+As long as not all users receive the same offer, I need to build a recommendation system that provides the most suitable offers for each user along with a machine learning prediction model to predict the effectiveness of Starbucks offers.
 ## Metrics <a name="Metrics"></a>
 The traing and testing accuracy will be the used metrics to evaluate the machine learning prediction model  
 ## Data Exploration and Visualization <a name="ExploratoryDataAnalysisandVisualization"></a>
