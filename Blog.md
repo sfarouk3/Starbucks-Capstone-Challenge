@@ -136,7 +136,7 @@ This is to be used for any new user as it ranks the offers based on the usage.
 Sample of the output:
 ![intro_image](https://github.com/sfarouk3/Starbucks-Capstone-Challenge/blob/main/Starbucks%20pics/pic11.png)
 
-## Model Implementation and Refinement] <a name="ModelImplementationandRefinement"></a>
+## Model Implementation and Refinement <a name="ModelImplementationandRefinement"></a>
 Now I'll build a supervised Machine Learning Model on the valid offers data set to predict whether an offer will be completed or not.
 I will use three models and compare their results:
 
