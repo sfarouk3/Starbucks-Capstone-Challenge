@@ -12,10 +12,12 @@
   6.	[Data Preprocessing](#DataPreprocessing)
   7.	[User-User Based Collaborative Filtering](#User-UserBasedCollaborativeFiltering)
   8.	[Refinement: Rank Based Recommendations](#RefinementRankBasedRecommendations)
-  9.	[Evaluation and Validation](#EvaluationandValidation)
-  10.	[Justification](#Justification)
-  11.	[Conclusion - Reflection](#Conclusion-Reflection)
-  12.	[Improvement](#Improvement)
+  9.	[Model Implementation and Refinement](#ModelImplementationandRefinement)
+  10.	[Evaluation and Validation](#EvaluationandValidation)
+  11.	[Improvement](#Improvement)
+  12.	[Justification](#Justification)
+  13.	[Conclusion - Reflection](#Conclusion-Reflection)
+  
 
 
 ## Project Overview <a name="ProjectOverview"></a>
@@ -44,7 +46,7 @@ The data is contained in three files:
 ## Problem Statement <a name="ProblemStatement"></a>
 As long as not all users receive the same offer, I need to build a recommendation system that provides the most suitable offers for each user.
 ## Metrics <a name="Metrics"></a>
-This new recommendation system can be tested using the A/B testing concept to compare it to existing systems and evaluate the added value of this new system.
+The traing and testing accuracy will be the used metrics to evaluate the machine learning prediction model  
 ## Data Exploration and Visualization <a name="ExploratoryDataAnalysisandVisualization"></a>
 in this part we'll explore the datasets to understand more the data and the relation between different variables.
 ### 1-Portfolio Data Set
@@ -134,26 +136,51 @@ This is to be used for any new user as it ranks the offers based on the usage.
 Sample of the output:
 ![intro_image](https://github.com/sfarouk3/Starbucks-Capstone-Challenge/blob/main/Starbucks%20pics/pic11.png)
 
+## Model Implementation and Refinement] <a name="ModelImplementationandRefinement"></a>
+Now I'll build a supervised Machine Learning Model on the valid offers data set to predict whether an offer will be completed or not.
+I will use three models and compare their results:
+
+DecisionTreeClassifier
+GradientBoostingClassifier
+Random forest model
 
 ## Evaluation and Validation <a name="EvaluationandValidation"></a>
+1. DecisionTreeClassifier: 
+Training accuracy:1.0000
+Test accuracy:0.8178
+DecisionTreeClassifier feature importance:
+pic
 
-As we didn’t use a machine learning model in this problem, the evaluation of this recommendation system shall be through A/B testing concept where the users are divided randomly into two paths (one for the existing recommendation system and the other for our new recommendation system).
+2. GradientBoostingClassifier: 
+Training accuracy:0.8621
+Test accuracy:0.8598
+GradientBoostingClassifier feature importance:
+pic
 
-This would show the performance of the new system over the old one, and based on the testing we can decide the way forward.
+3. RandomForestClassifier: 
+Training accuracy:0.9909
+Test accuracy:0.8562
+RandomForestClassifier feature importance:
+pic
 
-
+## Improvement <a name="Improvement"></a>
+Using the GridSearchCv, I've tuned the number of RandomForst  estimators to reach the best estimator, and the accuracy did improved from 85.6% to 87% by setting the number of estimators to 150.
+ New RandomForestClassifier evaluation after tuning: 
+Training accuracy:1.0000
+Test accuracy:0.8702
 ## Justification <a name="Justification"></a>
 
 In this project we covered different types of users (existing and new) through different types of recommendation systems (Rank based and collaborative filtering)
 
 
 ## Conclusion - Reflection <a name="Conclusion-Reflection"></a>
-From the above we can see that we can use a combination of 2 techniques for Offers Recommendations
-1.	for New users that have never used the Starbucks offers, we can use Rank Based Recommendations.
-2.	for Current users for Starbucks offers, we can use User-User Based Collaborative Filtering.
+As we can see in all the above work
 
-## Improvement <a name="Improvement"></a>
-The recommendation system can be further improved by combining different types of recommendation systems like matrix factorization and other techniques; which I will consider in phase 2 of this project
+1. the best clf is randome forest
+2. the membership date is one of the most important features.
+3. the Testing accuracy is 87% after refinement, and in can be more improved if more features were added to the customers profile like customer segmentation based on monthly money spent in Starbucks, Fan flag,..etc
+
+
 
 
   
