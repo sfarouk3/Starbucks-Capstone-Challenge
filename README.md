@@ -15,7 +15,7 @@ There should be no necessary libraries to run the code here beyond the Anaconda 
 
 This is a simulation for the customer behavior on the Starbucks rewards mobile app. Once every few days, Starbucks sends out an offer to users of the mobile app. An offer can be merely an advertisement for a drink or an actual offer such as a discount or BOGO (buy one get one free). Some users might not receive any offer during certain weeks.
 
-In this project I will build different types or recommendation system to recommend offers to existing and new users (Rank based and collaborative filtering recommendation system).
+In this project I will build different types or recommendation system to recommend offers to existing and new users (Rank based and collaborative filtering recommendation system) along with machine learning model to predict the effectiveness of Srarbucks offers
 
 ## File Descriptions <a name="files"></a>
 
